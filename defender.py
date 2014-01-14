@@ -1,7 +1,7 @@
-# davatron.py
+# defender.py
 # mg 2013
 #
-# look - think - act
+# look - think - behave
 
 import rg
 
@@ -80,7 +80,7 @@ class Brain:
     if self.actions['move']:
       new_loc = rg.toward(self.robot.location, rg.CENTER_POINT)
       return ['move', new_loc]
-      
+
     # Protect the herd
     if self.actions['guard']:
       return ['guard']
